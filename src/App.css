@@ -1,22 +1,102 @@
-.App {
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
+}
+
+.chat-box {
+  background: #202020;
+  margin: auto;
+  padding: 2em;
+  height: 35em;
+  width: 95%;
+  border-radius: 20px;
+  overflow-y: scroll;
+}
+
+.first-person, .second-person {
+  display: inline-block;
+  color: #fff;
+  height: 25px;
+  min-width: 20%;
+  max-width: 60%;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 30px;
+}
+
+.first-person {
+  background: rgb(0, 173, 231);
+}
+
+.second-person {
+  background: #06c406;
+  float: right;
+}
+
+.clear{ 
+  clear: both;
+  display: block;  
+  content: "";
+  width: 100%;  
+}
+
+.switcher-div {
+  padding-top: 1em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+#messageForm {
+  text-align: center;
+  margin-top: 1.5em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#messageForm input {
+  height: 2em;
+  width: 23em;
+  border-radius: 3em;
+  padding: 1em;
+}
+
+#messageForm button {
+  margin-left: 2em;
+  height: 2.7em;
+  width: 6.2em;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-button {
+  background: #d40000;
+  color: #fff;
+  float: right;
+  margin-right: 3em;
+  text-align: center;
+  height: 2.5em;
+  width: 8em;
+  cursor: pointer;
+}
+
+.switcher {
+  background: #cecece;
+  color: #141414;
+  height: 2.5em;
+  width: 6em;
+  border-radius: 25px;
+  border: 1 px solid black;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.notify {
+  position: absolute;
+  background: #db0000;
   color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+  height: 1em;
+  width: 1em;
+  border-radius: 100%;
+  padding: 0.15em;
+  margin-left: 0.5em;
+  margin-top: -0.5em;
 }
