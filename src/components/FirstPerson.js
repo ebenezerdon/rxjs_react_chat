@@ -5,8 +5,10 @@ const FirstPerson = () => {
   const [chatState, setChatState] = useState(chatStore.initialState);
 
   useLayoutEffect(()=> {
-    chatStore.subscribe(setChatState);
+    const subs = chatStore.subscribe(setChatState);
     chatStore.init();
+
+    return () => subs.unsubscribe();
   },[]);
 
   const onFormSubmit = e => {
