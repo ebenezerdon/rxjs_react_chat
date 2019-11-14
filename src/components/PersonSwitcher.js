@@ -5,9 +5,6 @@ import chatStore from '../store/chat';
 const PersonSwitcher = () => {
   const [chatState, setChatState] = useState(chatStore.initialState);
   const location = window.location.href.split('/')[3];
-  console.log('------------------------------------');
-  console.log(location.length);
-  console.log('------------------------------------');
 
   useEffect(() => {
     chatStore.subscribe(setChatState);
